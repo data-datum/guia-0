@@ -1,0 +1,148 @@
+---
+title: "Introducción a R y Rstudio"
+author: "Probabilidad y Estadística"
+date: "Ingeniería Industrial - Facultad de Ciencias Agrarias"
+output: pdf_document
+---
+
+# R 
+
+R es un lenguaje de programación y entorno computacional dedicado a la estadística. 
+Es un lenguaje de programación porque nos permite dar instrucciones, usando código, a nuestros equipos de cómputo para que se realicen tareas específicas. Cuando instalamos R en nuestra computadora, estamos instalando un entorno computacional. 
+R es diferente a otros lenguajes de programación que por lo general están diseñados para realizar muchas tareas diferentes, R fue creado con el único propósito de hacer estadística. 
+Para instalar R lo podemos hacer desde el CRAN:
+
+https://cran.r-project.org/bin/windows/base/
+
+También se encuentran las versiones disponibles para Linux y Mac. 
+
+CRAN es el acrónimo para _Cromprehensive R Archive Network_ y es un repositorio oficial de paquetes. 
+
+# Rstudio
+
+Rstudio es una IDE para R. Una IDE es un entorno integrado de desarrollo. 
+Una IDE nos proporcional herramientas para escribir y revisar nuestro código, administra los archivos que estamos usando, gestionar nuestro entorno de trabajo y algunas otras herramientas de productividad. 
+Para instalar Rstudio, es necesario descargar y ejecutar alguno de los instaladores disponibles en el sitio oficial. 
+
+
+# Partes de Rstudio
+
+Al abrir Rstudio se visualiza lo siguiente
+
+\begin{figure}[ht] 
+\includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-1.png}
+\caption{Archivos, Gráficos, Paquetes, Ayuda, Viewer}
+\end{figure}
+
+## Fuente
+- Es en donde se escribe el código para documentarlo en scripts. 
+- En primer lugar se detallan las librerías con las que se trabajan. 
+- Para comentar el código usamos numeral #
+
+```{r, eval=FALSE}
+# Este es un comentario
+```
+
+
+\begin{figure}[ht] 
+\includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-2.png}
+\caption{Fuente}
+\end{figure}
+
+
+
+## Consola
+
+- Es la parte más importante porque es donde nuestro código es interpretado. 
+- Podemos escribir directamente aquí nuestro código y será ejecutado. 
+
+
+\begin{figure}[ht] 
+\includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-3.png}
+\caption{Consola}
+\end{figure}
+
+
+
+## Entorno, Historia, Conexiones y Git
+- En esta parte se guardan las bases de datos, las funciones del entorno de trabajo. 
+- También desde allí podemos importar bases de datos. 
+- Para limpiar nuestro entorno de trabajo podemos hacerlo con el símbolo de la escobita. 
+
+\begin{figure}[ht] 
+\includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-4.png}
+\caption{Entorno, historia, conexiones}
+\end{figure}
+
+
+
+## Archivos, Gráficos, Paquetes, Ayuda
+- En esta sección podemos ver los archivos la carpeta que funciona como entorno de trabajo. 
+- Se pueden visualizar los gráficos que hemos realizado. 
+- Se ofrece una lista de paquetes instalados y cargados en nuestro entorno de Rstudio. 
+- La ayuda nos permite ver la documentación de una determinada librería. 
+- Finalmente en la pestaña _Viewer_ podemos visualizar documentos de texto o interactivos que realicemos. 
+
+\begin{figure}[ht] 
+\includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-5.png}
+\caption{Archivos, Gráficos, Paquetes, Ayuda, Viewer}
+\end{figure}
+
+
+# Conceptos Clave
+
+### Objetos
+En R, todo es un objeto. Todos los datos y estructuras de datos son objetos. Además, todos los objetos tienen un nombre para identificarlos.
+
+### Asignación 
+En R usamos <- para asignar un nombre a un objeto
+
+```{r}
+radio <- 2
+```
+
+### Entorno de trabajo
+- Es en donde se guardarán nuestros archivos, scripts y gráficos 
+
+```{r}
+getwd()
+```
+
+- Si quisiéramos definir otro entorno de trabajo
+
+```{r, eval=FALSE}
+setwd()
+```
+
+### Paquetes
+
+- Un paquete es una colección de funciones diseñadas para atender una tarea específica. Para instalarlos desde el CRAN lo hacemos de la siguiente manera:
+
+```{r, eval=FALSE}
+install.packages("ggplot2")
+```
+
+- Una vez concluida la instalación podemos usar las funciones de ese paquete mediante
+
+```{r, eval=FALSE}
+library("ggplot2")
+```
+
+- Para conocer todos los paquetes que tenemos instalados
+
+```{r, eval=FALSE}
+installed.packages()
+```
+
+### Scripts
+Los scripts son documentos de texto con la extensión .R
+Son útiles para guardar y poder compartir código. 
+
+
+
+# Bibliografía
+
+- R para principiantes. _Juan Bosco Mendoza Vega_
+Disponible en: http://bit.ly/2Zg0I3M
+- El arte de programar en R _Julio Sergio Santana & Efraín Mateos Farfán_ Disponible en:http://bit.ly/2N2Y1Y8 
+
