@@ -85,11 +85,11 @@ Al abrir Rstudio se visualiza lo siguiente
 
 \begin{figure}[ht] 
 \includegraphics[width=0.75\textwidth]{/Users/Roxana/guia-0/images/rstudio-5.png}
-\caption{Archivos, Gráficos, Paquetes, Ayuda, Viewer}
+\caption{Archivos, Gráficos, Paquetes, Ayuda}
 \end{figure}
 
 
-# Conceptos Clave
+# Conceptos Claves
 
 ### Objetos
 En R, todo es un objeto. Todos los datos y estructuras de datos son objetos. Además, todos los objetos tienen un nombre para identificarlos.
@@ -139,12 +139,10 @@ Los scripts son documentos de texto con la extensión .R
 Son útiles para guardar y poder compartir código. 
 
 
-## R como calculadora
-
 
 # Bibliografía
 
 - R para principiantes. _Juan Bosco Mendoza Vega_
-Disponible en: http://bit.ly/2Zg0I3M
-- El arte de programar en R _Julio Sergio Santana & Efraín Mateos Farfán_ Disponible en:http://bit.ly/2N2Y1Y8 
+Disponible en http://bit.ly/2Zg0I3M
+- El arte de programar en R _Julio Sergio Santana & Efraín Mateos Farfán_ Disponible en http://bit.ly/2N2Y1Y8 
 
