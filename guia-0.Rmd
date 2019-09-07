@@ -139,9 +139,6 @@ Los scripts son documentos de texto con la extensión .R
 Son útiles para guardar y poder compartir código. 
 
 
-## R como calculadora
-
-
 
 # Bibliografía
 
